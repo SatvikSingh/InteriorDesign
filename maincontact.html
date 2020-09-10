@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  color: white;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/*Hover effect for dropdown menu*/
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu {  
+        display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  
+    }
+	.navbar .nav-item:hover .nav-link { 
+        color: #fff;  
+    }
+	.navbar .dropdown-menu.fade-down { 
+        top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; 
+    }
+	.navbar .dropdown-menu.fade-up { 
+        top:180%;  
+    }
+	.navbar .nav-item:hover .dropdown-menu { 
+        transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); 
+    }
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    color:white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+  }
+
+  .footer {
+    
+    height: 65px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    position: relative;
+  }
+  .social-media{
+    font-size: 25px;
+    color: #fff;
+    background: rgba(0,0,0,0.4);
+    display:flex;
+    justify-content: center;
+    padding: 30px 0 20px;
+    
+}
+
+a1{ /*outside button*/
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0,0,0,0.9);
+    border: 1px solid rgba(0,0,0,0.01);
+    transition: 0.5s all;
+}
+
+a1 i1{
+  transition: 0.5s all;
+}
+
+a1:hover i1{/*inside icons move*/
+    transform: scale(0.80);
+}
+a1:hover .fa-facebook{
+    color: blue;
+}
+a1:hover .fa-whatsapp{
+    color: green;
+}
+a1:hover .fa-instagram{
+    color:crimson
+}
+a1:hover .fa-twitter{
+    color: skyblue
+}
+a1:hover .fa-linkedin{
+    color: blue
+}
+
+footer {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.social-media2{
+  font-size: 30px;
+  display:flex;
+}
+
+a10{ /*outside button*/
+    height: 25px;
+    width: 25px;
+    margin: 0 5px;
+    border-radius: 8px;
+    
+    border: 1px solid rgba(0,0,0,0.01);
+    transition: 0.1s all;
+}
+
+a10 i1{
+  transition: 0.1s all;
+}
+
+a10:hover i1{/*inside icons move*/
+    transform: scale(0.80);
+}
+a10:hover .fa-facebook{
+    color: blue;
+}
+
+a10:hover .fa-twitter{
+    color: skyblue
+}
+a10:hover .fa-linkedin{
+    color: blue
+}
+a10:hover  .fa-envelope{
+    color: lightcoral;
+}
+a10:hover  .fa-user-circle{
+    color: cyan;
+}
+a10:hover  .fa-building{
+    color: black;
+}
+a10:hover  .fa-github{
+    color: black;
+}
+a10:hover  .fa-google-plus{
+    color: red;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container-out{
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("Images/contact-background.jpg");
+  background-size: cover;
+  background-color: grey;
+  padding:50px;
+  
+
+}
+
+.container2 {
+  
+  border-radius: 15px;
+  width: 100%;
+	max-width: 1400px;
+	margin: 0px auto;
+  justify-content: center;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.submit-button {
+  background-color: rgba(0,0,0,0.6) !important;
+  transition: 0.5s ease;
+}
+
+.submit-button:hover {
+  background-color: rgba(0,0,0,0.9) !important;
+}
+
+.submit-link:hover {
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Interior Design</span>
+      </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdownMenuLink" role="button" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gallery
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="dining-drawing.html">Dining and Drawing</a>
+                <a class="dropdown-item" href="bedroom.html">Bedroom</a>
+                <a class="dropdown-item" href="kitchen.html">Kitchen</a>
+                <a class="dropdown-item" href="office.html">Office</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="maincontact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Shopping Cart</a>
+          </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="button">Search</button>
+          </form>
+        </div>
+      </nav><br><br><br>
+<!--------------------------------------------------------------------navbar------------------------------------------------------------>
+
+<div class="header">
+        <h1 style="font-size: 60px;">CONTACT US</h1>
+        <h4 style="color:white; margin-top: 20px;">Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a message:</h4>
+      </div>
+<div class="container-out">
+    <div class="container2">
+        <div style="text-align:center">
+          
+          
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width:100%;">
+            
+              <br><br><h2>Contact Info</h2><br>
+              <span style="font-size: 20px;"><span><a10><i1 class="fa fa-building"></a10></span>
+              <span style="color: lightgray;">Downtown 123002</span><br>
+
+              <span><a10><i1 class="fab fa fa-envelope"></a10></span>
+              <span style="color: lightgray;">intdesign@gmail.com</span><br>
+
+              <span><a10><i1 class="fa fa-user-circle"></a10></span>
+              <span style="color: lightgray;">090-3344-4445</span>
+              <br>
+              <br>
+              <div class="social-media2">     
+                <a10 href="https://www.github.com/"><i1 class="fab fa-github"></i1></a10>
+                <a10 href="https://twitter.com/?lang=en"><i1 class="fab fa-twitter"></i1></a10>
+                <a10 href="https://www.linkedin.com/"><i1 class="fab fa-linkedin"></i1></a10>
+                <a10 href="https://www.facebook.com/"><i1 class="fab fa-facebook"></i1></a10>
+                <a10 href="https://www.googleplus.com/"><i1 class="fab fa-google-plus"></i1></a10>
+
+              </div>
+            </span>
+          
+          </div>
+          <div class="column">
+            <form action="data.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name" required>
+
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Last name" required> 
+
+              <label for="email">Mail ID</label>
+              <input type="text" id="email" name="email" placeholder="Your Mail ID" required>
+
+              <label for="number">Contact Number</label>
+              <input type="text" id="number" name="contact" placeholder="Your Contact number" required>
+
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="India">India</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                         
+              </select>
+
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+              <a class="submit-link" href="data.html"><p><input type="submit" class="submit-button btn-block"></p></a>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="footer">
+      <center>
+      <br>
+      <p style="color:white";><h5 style="font-size: 15px;">FOLLOW US</h5></p>
+      <hr style="background-color: gray; width: 25%;">  
+      <br>
+    </center>
+    </div>
+    <div class="social-media">
+        <a1 href="https://www.facebook.com/"><i1 class="fab fa-facebook"></i1></a1>
+        <a1 href="https://www.whatsapp.com/"><i1 class="fab fa-whatsapp"></i1></a1>
+        <a1 href="https://www.instagram.com/?hl=en"><i1 class="fab fa-instagram"></i1></a1>
+        <a1 href="https://twitter.com/?lang=en"><i1 class="fab fa-twitter"></i1></a1>
+        <a1 href="https://www.linkedin.com/"><i1 class="fab fa-linkedin"></i1></a1>  
+      </div>
+    
+      <footer>
+            <div class="container" style="padding-bottom: 10px;">
+              <center>
+                <p style="color: gray;">Copyright &copy; Interior Design. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
+              </center>             
+                        
+            </div>
+        </footer>
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+</body>
+</html>

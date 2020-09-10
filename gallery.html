@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: rgba(0,0,0,0.6);
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  
+}
+
+.row img { 
+      border:2px solid black; 
+			transition: 0.5s; 
+			padding: 20px; 
+		} 
+		
+		.row img:hover { 
+			filter: drop-shadow(4px 4px 6px gray); 
+			transform: scale(1.1); 
+		}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/*Hover effect for dropdown menu*/
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu {  
+        display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  
+    }
+	.navbar .nav-item:hover .nav-link { 
+        color: #fff;  
+    }
+	.navbar .dropdown-menu.fade-down { 
+        top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; 
+    }
+	.navbar .dropdown-menu.fade-up { 
+        top:180%;  
+    }
+	.navbar .nav-item:hover .dropdown-menu { 
+        transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); 
+    }
+}
+
+.scroll-down {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    z-index: 9;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%) rotate(45deg);
+    -moz-transform: translate(-50%, 0%) rotate(45deg);
+    transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 4s ease-in-out infinite;
+	-moz-animation:    fade_move_down 4s ease-in-out infinite;
+	animation:         fade_move_down 4s ease-in-out infinite;
+}
+
+.footer {
+    
+    height: 65px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: relative;
+  }
+  .social-media{
+    font-size: 25px;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    display:flex;
+    justify-content: center;
+    padding: 30px 0 20px;
+    
+}
+
+a1{ /*outside button*/
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0,0,0,0.9);
+    border: 1px solid rgba(0,0,0,0.01);
+    transition: 0.5s all;
+}
+
+a1 i1{
+  transition: 0.5s all;
+}
+
+a1:hover i1{/*inside icons move*/
+    transform: scale(0.80);
+}
+a1:hover .fa-facebook{
+    color: blue;
+}
+a1:hover .fa-whatsapp{
+    color: green;
+}
+a1:hover .fa-instagram{
+    color:crimson
+}
+a1:hover .fa-twitter{
+    color: skyblue
+}
+a1:hover .fa-linkedin{
+    color: blue
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+  0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@-moz-keyframes fade_move_down {
+  0%   { -moz-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+@keyframes fade_move_down {
+  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+}
+
+.how-we-work {
+    margin-top: 30px;
+    align-items: center;
+}
+
+.how-we-work .container .row .section_title h3 {
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+.how-we-work .container .row .section_title p {
+    font-size: 17px;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+/* hover styles */
+.interior-listing {
+  position: relative;
+}
+
+.interior-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.interior-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.interior-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interior-listing:hover .interior-title {
+  opacity: 1;
+}
+
+.interior-listing:hover .interior-image img {
+  filter: blur(5px);
+}
+.interior-title{
+  text-align: center;
+}
+
+/* for touch screen devices */
+@media (hover: none) { 
+  .interior-title {
+    opacity: 1;
+  }
+  .interior-image img {
+    filter: blur(2px);
+  }
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(214, 212, 212, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    color:white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+  }
+
+
+</style>
+</style>
+
+<title>Office</title> 
+	<link rel="stylesheet"
+		type="text/css"
+		href="lightbox2/dist/css/lightbox.min.css"> 
+	<script src= 
+"lightbox2/dist/js/lightbox-plus-jquery.min.js"> 
+	</script> 
+	<style> 
+	
+		
+	
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Interior Design</span>
+      </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdownMenuLink" role="button" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gallery
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="dining-drawing.html">Dining and Drawing</a>
+                <a class="dropdown-item" href="bedroom.html">Bedroom</a>
+                <a class="dropdown-item" href="kitchen.html">Kitchen</a>
+                <a class="dropdown-item" href="office.html">Office</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="maincontact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Shopping Cart</a>
+          </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="button">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!---------------------------------------------------------------------------navbar end-------------------------------------------------------------------------->
+     <br><br><br>
+      <div class="header">
+        <h1 style="font-size: 40px;">GALLERY</h1>
+        <center>
+          <hr style="background-color: #fff; width: 30%;">
+          </center>
+      </div><br>
+</div>
+    <div class="child-page-listing">
+
+      <h2 style="text-align: center; color: white;">Find Your Style By Placing Your Cursor Over It.</h2><br>
+      <div class="grid-container">
+         <!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <article id="3688" class="interior-listing">
+    
+          <a class="interior-title" href="dining-drawing.html" style="height:100%">
+                        DINING/DRAWING ROOM   </a>
+    
+          <div class="interior-image">
+            <a href="#">
+                            <img width="100%" src="https://i.pinimg.com/564x/9e/73/28/9e7328decab1e4bcaa615709dde2e40d.jpg" alt="dining-drawing">    </a>
+    
+          </div>
+    
+        </article>
+     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <article id="3688" class="interior-listing">
+    
+          <a class="interior-title" href="bedroom.html" style="height:88%">
+                        BEDROOM                      </a>
+    
+          <div class="interior-image">
+            <a href="#">
+                            <img width="100%" src="https://interiordesign4.com/wp-content/uploads/2014/07/Bedroom-Designing-%E2%80%93-Design-your-Bedroom-550x1050.jpg" alt="bedroom">    </a>
+    
+          </div>
+    
+        </article>
+     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <article id="3688" class="interior-listing">
+    
+          <a class="interior-title" href="kitchen.html" style="height:82%">
+                        KITCHEN                       </a>
+    
+          <div class="interior-image">
+            <a href="#">
+                            <img width="100%" src="https://interiordesign4.com/wp-content/uploads/2014/04/How-to-Create-a-High-Gloss-Kitchen-550x1050.jpg" alt="kitchen">  </a>
+    
+          </div>
+    
+        </article>
+     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+      <article id="3688" class="interior-listing">
+    
+          <a class="interior-title" href="office.html" style="height:99%">
+                        OFFICE                       </a>
+    
+          <div class="interior-image">
+            <a href="#">
+                            <img width="100%" src="https://interiordesign4.com/wp-content/uploads/2013/01/Office-interior-design-%E2%80%93-Home-Office-550x1050.jpg" alt="office">                  
+                        </a>
+          </div>
+    
+        </article>
+     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+      </div>
+      <!-- end grid container -->
+    
+    </div>
+
+ <!---------------------------------------------------------------------------footer-------------------------------------------------------------------------->
+    <br><br><br>
+    <div class="footer">
+      <center>
+      <br>
+      <p style="color:white";><h5 style="font-size: 15px;">FOLLOW US</h5></p>
+      <hr style="background-color: gray; width: 25%;">  
+      <br>
+    </center>
+    </div>
+    <div class="social-media">
+        <a1 href="https://www.facebook.com/"><i1 class="fab fa-facebook"></i1></a1>
+        <a1 href="https://www.whatsapp.com/"><i1 class="fab fa-whatsapp"></i1></a1>
+        <a1 href="https://www.instagram.com/?hl=en"><i1 class="fab fa-instagram"></i1></a1>
+        <a1 href="https://twitter.com/?lang=en"><i1 class="fab fa-twitter"></i1></a1>
+        <a1 href="https://www.linkedin.com/"><i1 class="fab fa-linkedin"></i1></a1>
+        
+      </div>
+      <footer style="background-color: rgba(0,0,0,0.6); color: white;">
+            <div class="container" style="padding-bottom: 10px;">
+              <center>
+                <p>Copyright &copy; Interior Design. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
+              </center>             
+                    	
+            </div>
+        </footer>
+
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  

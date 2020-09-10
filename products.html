@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Interior Design</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        
+    
+    <style>
+ 
+body {
+    font-family: sans-serif;
+    background-color: rgba(0,0,0,0.6);
+}
+
+ .footer {
+    
+    height: 65px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    position: relative;
+  }
+  .social-media{
+    font-size: 25px;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    display:flex;
+    justify-content: center;
+    padding: 30px 0 20px;
+    
+}
+
+a1{ /*outside button*/
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(0,0,0,0.9);
+    border: 1px solid rgba(0,0,0,0.01);
+    transition: 0.5s all;
+}
+
+a1 i1{
+  transition: 0.5s all;
+}
+
+a1:hover i1{/*inside icons move*/
+    transform: scale(0.80);
+}
+a1:hover .fa-facebook{
+    color: blue;
+}
+a1:hover .fa-whatsapp{
+    color: green;
+}
+a1:hover .fa-instagram{
+    color:crimson
+}
+a1:hover .fa-twitter{
+    color: skyblue
+}
+a1:hover .fa-linkedin{
+    color: blue
+}
+
+footer {
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+    </style>
+    
+    
+    
+    
+    
+    
+    
+    
+    </head>
+
+
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="index.html">Interior Design Store</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="dropdown-item" href="dining-drawing.html">Dining and Drawing</a>
+                        <li><a class="dropdown-item" href="bedroom.html">Bedroom</a></li>
+                        <li><a class="dropdown-item" href="kitchen.html">Kitchen</a></li>
+                        <li><a class="dropdown-item" href="office.html">Office</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="content">
+
+            <!-- Jumbotron Header -->
+            <div class="jumbotron home-spacer" id="products-jumbotron">
+                <h1>Welcome to Our Design Store!</h1>
+                <p>We shape your homes ... </p>
+
+            </div>
+            <hr>
+
+            <div class="row text-center" id="cameras">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/1.png" alt="">
+                        <div class="caption">
+                            <h3>Chelsea Bed </h3>
+                            <p>Price: Rs. 36000.00 </p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/2.png" alt="">
+                        <div class="caption">
+                            <h3>Thompson Bed </h3>
+                            <p>Price: Rs. 40,000.00 </p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/3.png" alt="">
+                        <div class="caption">
+                            <h3>Worth Bed</h3>
+                            <p>Price: Rs. 50000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/4.png" alt="">
+                        <div class="caption">
+                            <h3>Monroe Bed</h3>
+                            <p>Price: Rs. 50000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="watches">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/6.png" alt="">
+                        <div class="caption">
+                            <h3>Parana bed</h3>
+                            <p>Price: Rs. 13000.00 </p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/7.png" alt="">
+                        <div class="caption">
+                            <h3>Currant bed</h3>
+                            <p>Price: Rs. 30000.00 </p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/8.png" alt="">
+                        <div class="caption">
+                            <h3>Broome bed</h3>
+                            <p>Price: Rs. 18000.00 </p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/10.png" alt="">
+                        <div class="caption">
+                            <h3>Laurel bed </h3>
+                            <p>Price: Rs. 38000.00 </p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center" id="shirts">
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/11.png" alt="">
+                        <div class="caption">
+                            <h3>Hosata bed </h3>
+                            <p>Price: Rs. 32000.00 </p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/12.png" alt="">
+                        <div class="caption">
+                            <h3>Luis bed</h3>
+                            <p>Price: Rs. 10000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/13.png" alt="">
+                        <div class="caption">
+                            <h3>Zok bed</h3>
+                            <p>Price: Rs. 15000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/3.png" alt="">
+                        <div class="caption">
+                            <h3>Worth Bed</h3>
+                            <p>Price: Rs. 50000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			 <div class="row text-center" id="watches">
+				 <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/17.png" alt="">
+                        <div class="caption">
+                            <h3>Wok Bed</h3>
+                            <p>Price: Rs. 20000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+				 <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/18.png" alt="">
+                        <div class="caption">
+                            <h3>Branch Bed</h3>
+                            <p>Price: Rs. 20000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/20.png" alt="">
+                        <div class="caption">
+                            <h3>Langrahm chair</h3>
+                            <p>Price: Rs. 2000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/22.png" alt="">
+                        <div class="caption">
+                            <h3>Mat tabel</h3>
+                            <p>Price: Rs. 12000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+			 <div class="row text-center" id="watches">
+				<div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/23.png" alt="">
+                        <div class="caption">
+                            <h3>Mercer tabel</h3>
+                            <p>Price: Rs. 2000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/24.png" alt="">
+                        <div class="caption">
+                            <h3>Dania Tabel</h3>
+                            <p>Price: Rs. 13000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+				<div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/25.png" alt="">
+                        <div class="caption">
+                            <h3>Costa tabel</h3>
+                            <p>Price: Rs. 20000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="img/15.png" alt="">
+                        <div class="caption">
+                            <h3>Jhalsani bed</h3>
+                            <p>Price Rs. 13000.00</p>
+                            <p><a href="success.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+			</div>	
+            </div>
+            <hr>
+        </div>
+        <div class="footer">
+            <center>
+            <br>
+            <p style="color:white";><h5 style="font-size: 15px;">FOLLOW US</h5></p>
+            <hr style="background-color: gray; width: 25%;">  
+            <br>
+          </center>
+          </div>
+          <div class="social-media">
+              <a1 href="https://www.facebook.com/"><i1 class="fab fa-facebook"></i1></a1>
+              <a1 href="https://www.whatsapp.com/"><i1 class="fab fa-whatsapp"></i1></a1>
+              <a1 href="https://www.instagram.com/?hl=en"><i1 class="fab fa-instagram"></i1></a1>
+              <a1 href="https://twitter.com/?lang=en"><i1 class="fab fa-twitter"></i1></a1>
+              <a1 href="https://www.linkedin.com/"><i1 class="fab fa-linkedin"></i1></a1>  
+            </div>
+          
+            <footer>
+                  <div class="container" style="padding-bottom: 10px;">
+                    <center>
+                      <p style="color: gray;">Copyright &copy; Interior Design. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
+                    </center>             
+                              
+                  </div>
+              </footer>
+    </body>
+</html>
